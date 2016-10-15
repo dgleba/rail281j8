@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number: MyString
+  subtype: MyString
+  year: MyString
+  sort: 1
+  active: false
+
+two:
+  name: MyString
+  number: MyString
+  subtype: MyString
+  year: MyString
+  sort: 1
+  active: false
