@@ -1,5 +1,8 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  #
+  autocomplete :type, :name, :full => true
+
 
   # GET /products
   # GET /products.json

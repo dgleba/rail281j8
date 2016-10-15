@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   resources :types
-  resources :products
+#
+  resources :products do
+    get :autocomplete_type_name, :on => :collection
+  end
+  root "products#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
