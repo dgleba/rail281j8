@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Type.create({name: "Christie"}) 
+Type.create({name: "Xerox"}) 
+Type.create({name: "Burns"}) 
+Type.create({name: "Mr. Christies"}) 
+Type.create({name: "Cities"}) 
+Type.create({name: "Three Cities"}) 
+Type.create({name: "Carob Charob"}) 
