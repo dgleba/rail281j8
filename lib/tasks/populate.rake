@@ -14,10 +14,11 @@ namespace :db do
 
     #[Contact1].each(&:delete_all)
 
-    Type.populate 14 do |a12|
+    Type.populate 19 do |a12|
       a12.name     = Faker::Book.title
       a12.number  = Faker::Number.between(127, 999)
-      a12.year    = Faker::Time.backward(990, :all)
+      a12.year    = Faker::Time.backward(1799, :all)
+      a12.sort    = Faker::Number.between(101, 101)
       a12.subtype   = Faker::Book.author
       a12.active   = Faker::Boolean.boolean(0.8)
     end

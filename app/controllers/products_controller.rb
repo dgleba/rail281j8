@@ -1,8 +1,16 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   #
-  autocomplete :type, :name, :full => true
+  autocomplete :type, :name, :extra_data => [:subtype], :full => true
 
+  # def autocomplete_type_name
+    # term = params[:term]
+    # subtype = params[:subtype]
+    # types = Type.where('subtype = ?  OR name LIKE ?', "%#{term}%", "%#{term}%" ).order(:name).all
+    # #render :json => products.map { |product| {:id => product.id, :label => product.name, :value => product.name} }
+    # render :json => types.map { |type| {:id => type.id, :label => type.name, :value => type.name }  }
+  # end
+  
 
   # GET /products
   # GET /products.json

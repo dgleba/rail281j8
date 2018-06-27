@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :type_name %><br>
-   <%= f.autocomplete_field :type_name, autocomplete_type_name_products_path , 'min-length' => 1 , 'data-auto-focus' => true% >
+   <%= f.autocomplete_field :type_name, autocomplete_type_name_products_path , 'min-length' => 1 , 'data-auto-focus' => true, :fields => {:subtype => '#subtype'},  :update_elements => { :subtype => '#subtype'} %>
 
   </div>
   <div class="field">
